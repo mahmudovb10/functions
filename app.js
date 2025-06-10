@@ -209,6 +209,8 @@ function calcAge(birthYear, firstName) {
 // });
 // console.log(newMehmonlar);
 
+//      Object
+
 const user = {
   name: "Bahodirxon",
   age: 19,
@@ -226,7 +228,7 @@ const user = {
     likes: 500,
   },
   login: function () {
-    console.log(this.movies);
+    console.log(this);
   },
 };
 user.login();
