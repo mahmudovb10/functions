@@ -102,3 +102,120 @@ function sum(n) {
   return yigindi; //  Oxirida yig'indini qaytarish
 }
 // console.log(sum(5));
+
+// Yoshini Aytib Beraddigan Funksiya
+
+function calcAge(birthYear, firstName) {
+  const age = 2025 - birthYear;
+  console.log(`${firstName} Siz ${age} Yoshdasiz`);
+  return age;
+}
+// const age = calcAge(2006, "Bahdirxon");
+
+//                                        [ARRAY]
+
+// let mevalar = ["olma", "banan", " uzum"];
+// mevalar.push("gilos"); // Oxiriga Qo'shadi
+// // mevalar.pop(); //  Oxiridagini O'chiradi
+// mevalar.unshift("O'rik"); // Boshiga Qo'shadi
+// mevalar.shift(0); // O'chiradi
+// console.log(mevalar);
+// console.log(mevalar.includes("banan")); // Bor Yo'qligini Tekshiradi
+// console.log(mevalar.includes("olma"));
+
+//                                      [ARRAY UCHUN OSON MASALALAR]
+
+// Arr.1 Oxiriga 'Gilos'ni Qo'shish
+
+// let mevalar = ["olma", "banan"];
+// mevalar.push("Gilos");
+// console.log(mevalar);
+
+// Arr.2 Boshidagi elementni olib tashlash
+
+// let sonlar = [10, 20, 30];
+// sonlar.shift(0);
+// console.log(sonlar);
+
+// Arr.3  Massivdagi elementni chiqarish
+
+// let ranglar = ["qizil", "yashil", "ko'k"];
+// console.log(ranglar[1]);
+
+// Arr.4   Element borligini tekshirish
+
+// let shaharlar = ["Toshkent", "Samarqand", "Buxoro"];
+// console.log(shaharlar.includes("Xiva"));
+
+// Arr.5  Massiv uzunligini topish
+
+// let raqamlar = [1, 2, 3, 4, 5];
+// console.log(raqamlar.length);
+
+// Arr.5  Juft sonlarni chiqarish
+
+// let sonlar = [1, 4, 7, 10, 13, 16];
+
+// for (let i = 0; i < sonlar.length; i++) {
+//   if (sonlar[i] % 2 === 0) {
+//     console.log(sonlar[i]);
+//   }
+// }
+
+// Arr.6 Massiv elementlarini teskari chiqarish
+
+// let harflar = ["a", "b", "c", "d"];
+// console.log(harflar.reverse());
+
+// Arr.7  Massivdagi elementlarni 2 ga ko‘paytirish
+
+// let sonlar = [2, 4, 6];
+// let yangiMassiv = [];
+
+// for (let i = 0; i < sonlar.length; i++) {
+//   yangiMassiv.push(sonlar[i] * 2);
+// }
+// console.log(yangiMassiv);
+
+// Arr.8  Massivda so‘z borligini tekshiruvchi funksiya yozing
+
+// let soz = prompt("Qaysi Meva Kerak");
+// let mevalar = ["olma", "banan", "gilos"];
+// if (mevalar.includes(alert)) {
+//   console.log("Bor");
+// } else {
+//   console.log("Yo'q");
+// }
+
+// forEach
+
+const ismlar = ["ahror", "doniyor", "asror", "asad"];
+const newIsmlar = [];
+
+ismlar.forEach(function (ism) {
+  const newIsm =
+    ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + "bek";
+  newIsmlar.push(newIsm);
+});
+// console.log(newIsmlar);
+
+const mehmonlar = ["aziz", "akrom", "ahror", "asror"];
+const newMehmonlar = [];
+
+mehmonlar.forEach(function (mehmon) {
+  const newMehmon =
+    mehmon.charAt().toUpperCase() + mehmon.slice(1).toLowerCase() + "xon";
+  newMehmonlar.push(newMehmon);
+});
+// console.log(newMehmonlar);
+
+const movies = [
+  { name: "Avatar", Layklar: 777 },
+  { name: "Indiana Jons", Layklar: 500 },
+  { name: "Ip man", Layklar: 200 },
+  { name: "Snayper", Layklar: 500 },
+];
+movies.forEach((movie) => {
+  const result = `Kini nomi: ${movie.name}🎥 ${movie.Layklar}💓 ta Layk`;
+  console.log(result);
+});
