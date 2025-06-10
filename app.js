@@ -189,33 +189,66 @@ function calcAge(birthYear, firstName) {
 
 // forEach
 
-const ismlar = ["ahror", "doniyor", "asror", "asad"];
-const newIsmlar = [];
+// const ismlar = ["ahror", "doniyor", "asror", "asad"];
+// const newIsmlar = [];
 
-ismlar.forEach(function (ism) {
-  const newIsm =
-    ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + "bek";
-  newIsmlar.push(newIsm);
-});
+// ismlar.forEach(function (ism) {
+//   const newIsm =
+//     ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + "bek";
+//   newIsmlar.push(newIsm);
+// });
 // console.log(newIsmlar);
 
-const mehmonlar = ["aziz", "akrom", "ahror", "asror"];
-const newMehmonlar = [];
+// const mehmonlar = ["aziz", "akrom", "ahror", "asror"];
+// const newMehmonlar = [];
 
-mehmonlar.forEach(function (mehmon) {
-  const newMehmon =
-    mehmon.charAt().toUpperCase() + mehmon.slice(1).toLowerCase() + "xon";
-  newMehmonlar.push(newMehmon);
-});
+// mehmonlar.forEach(function (mehmon) {
+//   const newMehmon =
+//     mehmon.charAt().toUpperCase() + mehmon.slice(1).toLowerCase() + "xon";
+//   newMehmonlar.push(newMehmon);
+// });
 // console.log(newMehmonlar);
 
-const movies = [
-  { name: "Avatar", Layklar: 777 },
-  { name: "Indiana Jons", Layklar: 500 },
-  { name: "Ip man", Layklar: 200 },
-  { name: "Snayper", Layklar: 500 },
-];
-movies.forEach((movie) => {
-  const result = `Kini nomi: ${movie.name}🎥 ${movie.Layklar}💓 ta Layk`;
-  console.log(result);
-});
+const user = {
+  name: "Bahodirxon",
+  age: 19,
+  number: 998775007434,
+  location: "Farg'ona",
+  email: "bahodirxon.nahnudov1@gmail.com",
+  movies: {
+    name: "Avatar",
+    likes: 777,
+    name: "Indiana Jons",
+    likes: 500,
+    name: "Ipman",
+    likes: 200,
+    name: "Snayper",
+    likes: 500,
+  },
+  login: function () {
+    console.log(this.movies);
+  },
+};
+user.login();
+// const movies = [
+//   { name: "Avatar", Layklar: 777 },
+//   { name: "Indiana Jons", Layklar: 500 },
+//   { name: "Ip man", Layklar: 200 },
+//   { name: "Snayper", Layklar: 500 },
+// ];
+// movies.forEach((movie) => {
+//   const result = `Kini nomi: ${movie.name}🎥 ${movie.Layklar}💓 ta Layk`;
+//   console.log(result);
+// });
+
+// const cars = [
+//   { name: "Mersedez-Benz", price: 15000 },
+//   { name: "Toyoyta", price: 10000 },
+//   { name: "Lexus", price: 7000 },
+//   { name: "Chevrolet", price: 5000 },
+//   { name: "Audi", price: 3000 },
+// ];
+// cars.forEach((car) => {
+//   const natija = `Avtomobil Markasi ${car.name}🚘 Narxi ${car.price}💵`;
+//   console.log(natija);
+// });
