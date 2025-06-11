@@ -210,47 +210,49 @@ function calcAge(birthYear, firstName) {
 // console.log(newMehmonlar);
 
 //      Object
+const movies = [
+  { name: "Avatar", Layklar: 777 },
+  { name: "Indiana Jons", Layklar: 500 },
+  { name: "Ip man", Layklar: 200 },
+  { name: "Snayper", Layklar: 500 },
+];
+// movies.forEach((allMovie) => {
+//   const result = `Kino Nomi: ${allMovie.name}, ${allMovie.Layklar} ta Layk Yeg'gan `;
+//   console.log(result);
+// });
 
 const user = {
   name: "Bahodirxon",
+  family: "Mahmudov",
   age: 19,
   number: 998775007434,
   location: "Farg'ona",
   email: "bahodirxon.nahnudov1@gmail.com",
-  movies: {
-    name: "Avatar",
-    likes: 777,
-    name: "Indiana Jons",
-    likes: 500,
-    name: "Ipman",
-    likes: 200,
-    name: "Snayper",
-    likes: 500,
-  },
-  login: function () {
-    console.log(this);
-  },
+  movies: [
+    { name: "Avatar", rate: 9 },
+    { name: "Snayper", rate: 7 },
+    { name: "Indiana Jons", rate: 8 },
+  ],
+  // login: function () {
+  //   console.log("Siz Bu Saytdagi Sahifangizga Kirdingiz");
+  // },
+  // logout: function () {
+  //   console.log("Siz Bu Saytdagi Sahifangizdan Chiqib Ketdingiz");
+  // },
 };
-user.login();
-// const movies = [
-//   { name: "Avatar", Layklar: 777 },
-//   { name: "Indiana Jons", Layklar: 500 },
-//   { name: "Ip man", Layklar: 200 },
-//   { name: "Snayper", Layklar: 500 },
-// ];
-// movies.forEach((movie) => {
-//   const result = `Kini nomi: ${movie.name}🎥 ${movie.Layklar}💓 ta Layk`;
-//   console.log(result);
-// });
+// user.logout();
+// user.login();
+const moviesText = "ning Yoqtirgan Kinolari";
+console.log(user.name, moviesText, user.movies);
 
-// const cars = [
-//   { name: "Mersedez-Benz", price: 15000 },
-//   { name: "Toyoyta", price: 10000 },
-//   { name: "Lexus", price: 7000 },
-//   { name: "Chevrolet", price: 5000 },
-//   { name: "Audi", price: 3000 },
-// ];
+const cars = [
+  { name: "Mersedez-Benz", price: 15000 },
+  { name: "Toyoyta", price: 10000 },
+  { name: "Lexus", price: 7000 },
+  { name: "Chevrolet", price: 5000 },
+  { name: "Audi", price: 3000 },
+];
 // cars.forEach((car) => {
-//   const natija = `Avtomobil Markasi ${car.name}🚘 Narxi ${car.price}💵`;
-//   console.log(natija);
+//   const result = `Avtomobil Markasi ${car.name}, Narxi ${car.price}`;
+//   console.log(result);
 // });
