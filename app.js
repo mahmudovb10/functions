@@ -243,7 +243,7 @@ const user = {
 // user.logout();
 // user.login();
 const moviesText = "ning Yoqtirgan Kinolari";
-console.log(user.name, moviesText, user.movies);
+// console.log(user.name, moviesText, user.movies);
 
 const cars = [
   { name: "Mersedez-Benz", price: 15000 },
@@ -256,3 +256,25 @@ const cars = [
 //   const result = `Avtomobil Markasi ${car.name}, Narxi ${car.price}`;
 //   console.log(result);
 // });
+
+// textContent
+const title = document.getElementById("title");
+title.textContent += " New Developer";
+
+const list = document.querySelectorAll("#list");
+list.forEach((item) => {
+  item.textContent += " Darslari";
+});
+
+// innerHTML
+const names = ["Asror", "Ahror", "Akrom"];
+const ul = document.querySelector("ul");
+
+names.forEach((name) => {
+  ul.innerHTML += `<li>${name}</li>`;
+});
+
+const newList = document.querySelector("#title");
+console.log(newList.style);
+newList.style.color = "red";
+newList.style.margin = "50px";
